@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="src/style/styles.css">
+    
+</head>
+<body>
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="animation-container">
+            <img src="src/logo/logo.png" alt="Logo del sito" class="welcome-logo">
+            <h1 class="welcome-text">AI SCIENCE</h1>
+        </div>
+    </div>
+ 
+
+    <div id="main-menu" class="hidden">
+        <header>
+            <div class="logo-container" >
+                <a href="index.html"><img src="src/logo/logo.png" alt="Logo del sito" class="logo" width="40%"></a>
+            </div>
+            <input type="checkbox" id="sidebar-activate">
+            <label for="sidebar-activate" class="open-sidebar-button">
+                <img src="src/images/sidebar.png" height="32" width="32">
+            </label>
+
+            
+            <div class="class_container">
+                <label for="sidebar-activate" class="closed-sidebar-button">
+                    <img src="src/images/x.png" height="32" width="32">
+
+                </label>
+                <a href="src/pages/teorie.html"><b>Teorie dell'Evoluzione</b></a>    
+                <a href="src/pages/fossili.html"><b>Fossili</b></a>
+                <a href="src/pages/adattamenti.html"><b>Adattamenti</b></a>
+                <a href="src/pages/evoluzione.html"><b>Evoluzione Umana</b></a>
+            </div>
+            
+        </header>
+
+        <section class="prima-sezione">
+            <img src="src/images/darwin.jpg" id="immagine-darwin" width="20%">
+            <h2 class="h2_text">“Non è la più forte delle specie che sopravvive, né la più intelligente, ma quella più reattiva ai cambiamenti.”</h2>
+
+        </section>
+
+        <section class="seconda-sezione">
+            <div class="card-container">
+                <a href="src/pages/evoluzione.html"><div class="card">
+                    <div class="image-placeholder"><img src="src/images/fish.avif" width="320" height="200"></div>
+                    <h3>Darwin e la Teoria dell'Evoluzione</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div></a>
+                <a href="src/pages/evoluzioneUmana.html"><div class="card">
+                    <div class="image-placeholder"><img src="src/images/bambini.jpg" width="320" height="200" alt=""></div>
+                    <h3>L'Evoluzione delle Popolazioni</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div></a>
+                <a href="src/pages/microEvo.html"><div class="card">
+                    <div class="image-placeholder"><img src="src/images/cromosoma.avif" width="320" height="200" alt=""></div>
+                    <h3>I Meccanismi di Microevoluzione</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div></a>
+                <a href="src/pages/specializzazione.html"><div class="card">
+                    <div class="image-placeholder"><img src="src/images/altri fish.jfif" width="320" height="200"></div>
+                    <h3>I Meccanismi della Speciazione</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div></a>
+                <a href="src/pages/macroEvo.html"><div class="card">
+                    <div class="image-placeholder"><img src="src/images/o fior.jfif" width="320" height="200" alt=""></div>
+                    <h3>I Meccanismi della Macroevoluzione</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div></a>  
+            </div>
+        </section>
+
+
+        <footer>
+            <p>© 2024 Evoluzione della Vita</p>
+        </footer>
+    </div>
+
+    <script type="module" src="src/script/script.js"></script>
+</body>
+</html>
