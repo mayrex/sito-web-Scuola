@@ -1,27 +1,25 @@
-/*import {Groq} from "groq-sdk";
+const menuOpenButton = document.querySelector("#menu-open-button")
+const menuCloseButton = document.querySelector("#menu-close-button")
+const header = document.getElementById("header")
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+  } else {
+      header.classList.remove("scrolled");
+  }
+});
 
-export async function main() {
-  const chatCompletion = await getGroqChatCompletion();
-  // Print the completion returned by the LLM.
-  console.log(chatCompletion.choices[0]?.message?.content || "");
-}
-  
 
-export async function getGroqChatCompletion() {
-  return groq.chat.completions.create({
-    messages: [
-      {
-        role: "user",
-        content: "Explain the importance of fast language models",
-      },
-    ],
-    model: "llama3-8b-8192",
-  });
-}
 
-*/
+menuOpenButton.addEventListener("click", () =>{
+  document.body.classList.toggle("show-mobile-menu")
+})
+
+menuCloseButton.addEventListener("click", ()=>{
+  menuOpenButton.click()
+})
+
 
 window.addEventListener('load', function () {
   const welcomeScreen = document.getElementById('welcome-screen');

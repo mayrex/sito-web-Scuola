@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 </head>
 <body>
@@ -15,28 +16,31 @@
         </div>
     </div>
 
-    <header>
+    <header class="header" id="header">
         <nav class="navbar section-content">
             <a href="./index.html" class="nav-logo">
                 <img src="src/logo/logo.png" alt="logo" class="logo-img">
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
                 <li class="nav-item">
-                    <a href="" class="nav-link">Home</a>
+                    <a href="" class="nav-link">Teorie</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">About us</a>
+                    <a href="" class="nav-link">Specializzazione</a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">L'evoluzione</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Teorie</a>
+                    <a href="" class="nav-link">About us</a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">Contatti</a>
                 </li>
             </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
 
@@ -57,7 +61,63 @@
                 <div class="hero-image-wrapper">
                     <img src="src/images/darwin.jpg" alt="logo" class="hero-image">
                 </div>
+            </div>
+        </section>
 
+        <section class="about-us-section">
+            <div class="section-content">
+                <div class="about-us-details">
+                    <h2 class="section-title">Chi siamo?</h2>
+                    <p class="text">Siamo 3 ragazzi del quarto anno del Liceo Scientifico.
+                        Siamo stati invitati dal nostro professore di informatica a creare un Sito Web,
+                        basato su un argomento che stiamo studiando in quest’anno di liceo. 
+                        In 4 anni di liceo è la prima volta che ci viene chiesto di creare e
+                         sviluppare un progetto che richieda tutte le nostre conoscenze scientifiche ed 
+                         informatiche. Sicuramente siamo entusiasti nel lavorarci. 
+                         La biologia è una nostra passione, che accomuna tutti e 3. 
+                         Dopo un lungo periodo di ricerca, sfogliando tra le pagine del libro,
+                          abbiamo trovato “L’Evoluzione”. L’evoluzione, in generale, è un argomento 
+                          che secondo noi non viene mai trattato con la giusta attenzione che merita. 
+                          La teoria dell’evoluzione non è solo la base della biologia moderna, 
+                          ma anche un esempio perfetto di come la scienza possa spiegare il mondo naturale 
+                          in modo razionale e sistematico. Il nostro progetto mira alle divulgazioni
+                           scientifiche delle nostre conoscenze, 
+                          ad un pubblico il più vasto possibile. 
+                          Speriamo che sarà di vostro gradimento, buona lettura!
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="evoluzione-section">
+            <div class="section-content">
+                <div class="evoluzione-image-wrapper">
+                    <img src="src/images/evoluzione.jpg" alt="evoluzione" class="evoluzione-image">
+                </div>
+                <div class="evoluzione-details">
+                    <h2 class="section-title">Evoluzione</h2>
+                    <p class="text">La teoria dell'evoluzione, proposta da Charles Darwin nel 1859, suggerisce che tutte le specie di organismi si sono evolute nel tempo attraverso un processo di selezione naturale. Secondo Darwin, le variazioni negli individui che offrono vantaggi di sopravvivenza e riproduzione tendono a essere preservate e trasmesse alle generazioni future, 
+                    portando all'adattamento e alla diversificazione delle specie.</p>
+                    <div class="buttons">
+                        <a href="#" class="button read-more">Leggi di più</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="teorie-section">
+            <div class="section-content">
+                <div class="teorie-image-wrapper">
+                    <img src="src/images/teorie.jpg" alt="evoluzione" class="teorie-image">
+                </div>  
+                <div class="teorie-details">
+                    <h2 class="section-title">Evoluzione</h2>
+                    <p class="text">La teoria dell'evoluzione, proposta da Charles Darwin nel 1859, suggerisce che tutte le specie di organismi si sono evolute nel tempo attraverso un processo di selezione naturale. Secondo Darwin, le variazioni negli individui che offrono vantaggi di sopravvivenza e riproduzione tendono a essere preservate e trasmesse alle generazioni future, 
+                    portando all'adattamento e alla diversificazione delle specie.</p>
+                    <div class="buttons">
+                        <a href="#" class="button read-more">Leggi di più</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
