@@ -81,6 +81,7 @@ img{
     background: var(--light-green);
 }
 header{
+     
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -237,11 +238,9 @@ header .navbar{
     line-height: 30px;
     margin: -50px 0 30px;
     text-align: center;
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-l);
     color: white;
 }
-
-
 
 
 .hero-section{
@@ -374,7 +373,78 @@ header .navbar{
     background: transparent;
 }
 
+.teorie-section
+{
+    min-height: 100vh;
+    padding: 120px 0;
+    background: var(--primary-color);
 
+}
+.teorie-page-section{
+    min-height: 75vh;
+    padding: 120px 0;
+    background: var(--blue-color);
+}
+
+
+.teorie-section .section-content, 
+.teorie-page-section {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.teorie-section .teorie-details .text{
+    line-height: 30px;
+    margin: -50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-l);
+    color: var(--white-color);
+}
+
+.teorie-page-section .teorie-page-details .text
+{
+    line-height: 30px;
+    margin: 0 30px;
+    text-align: center;
+    font-size: var(--font-size-l);
+    color: var(--white-color);
+}
+
+.teorie-section .teorie-details .section-title, 
+.teorie-page-section .teorie-page-details .section-title
+{
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+    color: var(--white-color);
+}
+
+.teorie-section .teorie-details .buttons{
+    display: flex;
+    gap: 23px;
+}
+
+
+.teorie-section .teorie-details .button{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3 ease;
+}
+
+
+.teorie-section .teorie-details .read-more:hover{
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
 
 
 
