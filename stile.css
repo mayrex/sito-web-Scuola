@@ -1,288 +1,102 @@
-:root {
-    --color-1: #0f1016;
-    --text-color: #f0f0f0;
-    --accent-color: #006aff;
-}
-
+/* Stile generale */
 body {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    color: var(--text-color);
-    background-color: #042d57;
+    background-color: #f8f9f5;
+    color: #333;
 }
 
-
-
+/* Header */
 header {
-    background-color: #12022a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #e5e5e5;
 }
 
-.welcome-screen {
-    position: fixed;
-
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-1);
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    overflow: hidden;
-}
-
-.animation-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-/* Logo iniziale */
-.welcome-logo {
-    width: 300px;
-    height: auto;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fade-in 1s ease-out 0.5s forwards, move-left 1s ease-out 2s forwards;
-}
-
-/* Schermata di benvenuto */
-.welcome-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-1);
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    overflow: hidden;
-}
-
-.animation-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-/* Logo iniziale */
-.welcome-logo {
-    width: 300px;
-    height: auto;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fade-in 1s ease-out 0.5s forwards, move-left 2s ease-in-out 1.5s forwards;
-}
-
-/* Testo che appare accanto al logo */
-.welcome-text {
-    font-size: 2em;
+h1 {
+    font-size: 2rem;
     font-weight: bold;
-    margin-left: 10px;
-    color: var(--accent-color);
-    opacity: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 2s steps(10, end) 2.5s forwards, blink 0.5s step-end infinite 4.5s;
+    margin: 0;
+    color: #2ba84a;
 }
 
-/* Animazione di fade-in per il logo */
-@keyframes fade-in {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-/* Effetto lampeggiante per il cursore */
-@keyframes blink {
-    from, to {
-        border-right: 2px solid transparent;
-    }
-    50% {
-        border-right: 2px solid var(--accent-color);
-    }
-}
-
-/* Nasconde il cursore quando l'animazione è completa */
-.welcome-text:not(:hover) {
-    border-right: none;
-}
-
-/* Schermata di benvenuto che scompare */
-.welcome-screen.hide {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 1s ease-out;
-}
-
-
-/* Contenitore per il logo */
-.logo-container {
+/* Layout principale */
+main {
     display: flex;
-    align-items: center;
-    margin-right: 55em;
-}
-
-/* Stili per il pulsante della sidebar */
-.open-sidebar-button {
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* Stili della sidebar */
-.class_container {
-    position: fixed;
-    top: 0;
-    right: -250px; /* Nasconde la sidebar inizialmente, ora sulla destra */
-    width: 250px;
-    height: 100%;
-    background-color: var(--color-1);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    transition: right 0.3s ease; /* Effetto di transizione */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Ombra alla sidebar sul lato sinistro */
-    z-index: 10; /* Aumenta il valore z-index per sovrapporsi agli altri elementi */
-}
-
-/* Stili dei link della sidebar */
-.class_container a {
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 15px;
-    border-bottom: 1px solid #333;
-    text-align: center;
-}
-
-.class_container a:hover {
-    background-color: #333;
-}
-
-#sidebar-activate {
-    display: none;
-}
-
-/* Mostra la sidebar quando si attiva il checkbox */
-#sidebar-activate:checked + .open-sidebar-button + .class_container {
-    right: 0; /* Porta la sidebar visibile sulla destra */
-}
-
-/* Pulsante di chiusura della sidebar */
-.closed-sidebar-button {
-    display: inline-block;
-    cursor: pointer;
-    padding: 15px;
-    margin-left: auto;
-}
-
-/* Stili per la sezione principale */
-section {
-    padding: 20px;
-    margin: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.prima-sezione {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    opacity: 0; /* La sezione è inizialmente invisibile */
-    transform: translateY(50px); /* Spostamento verso il basso */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transizione per opacità e trasformazione */
-}
-
-.prima-sezione.show {
-    opacity: 1; /* Diventa visibile */
-    transform: translateY(0); /* Torna alla posizione originale */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* Stili per il footer */
-footer {
-    background-color: #12022a;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-#immagine-darwin {
-    padding-left: 10em;
-}
-
-.h2_text {
-    font: 'Montserrat';
-    font-size: 30px;
-    margin: 20px;
-    padding-top: 4.3em;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    padding-bottom: 3em;
-    margin: 20px;
-    justify-content: center;
-}
-
-.card {
-    background-color: #1a1a1a;
-    border: 1px solid #444;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    width: 220px;
-    padding: 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    overflow: hidden;
 }
 
-.image-placeholder {
-    background-color: #555;
-    color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
+/* Sidebar sinistra */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f8f2;
+    color: #2ba84a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-right: 2px solid #e5e5e5;
+}
+
+.sidebar .menu {
+    margin-top: 20px;
+}
+
+.sidebar .numero {
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #2ba84a;
+}
+
+.sidebar .verde {
     margin-bottom: 15px;
 }
 
-/* Aggiungi le immagini adattandole al contenitore */
-.card img {
-    width: 100%; /* Imposta la larghezza dell'immagine al 100% del contenitore */
-    height: 200px; /* Imposta un'altezza fissa */
-    object-fit: cover; /* Mantieni il rapporto di aspetto senza distorcere l'immagine */
-    border-radius: 5px; /* Rende i bordi dell'immagine arrotondati */
+/* Contenuto principale */
+.content {
+    flex: 3;
+    padding: 30px;
+    color: #333;
 }
 
-.card h3 {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: white;
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2ba84a;
 }
 
-.card p {
-    font-size: 0.9em;
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.8);
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
+strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Immagine */
+.foto-darwin {
+    width: 180px;
+    display: block;
+    margin: 30px auto 10px;
+    border: 2px solid #ddd;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.didascalia {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}

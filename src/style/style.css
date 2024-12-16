@@ -71,6 +71,26 @@ img{
     color: white;
 }
 
+.section-subtitle{
+    text-align: center;
+    margin: 50px ;
+    text-transform: uppercase;
+    font-size: var(--font-size-l);
+    color: white;
+}
+
+.content{
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.teorie-page-details .content .text{
+    display: flex;
+    line-height: 30px;
+    text-align: left;
+}
+
 .section-title::after{
     content: "";
     width: 80px;
@@ -81,7 +101,6 @@ img{
     background: var(--light-green);
 }
 header{
-     
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -324,6 +343,8 @@ header .navbar{
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .evoluzione-section .evoluzione-image-wrapper .evoluzione-image{
     width: 550px;
