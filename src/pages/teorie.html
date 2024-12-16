@@ -6,21 +6,22 @@
     <title>Teorie</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="../logo/icon.png">
 
 </head>
-<body>
 
+<body>
 
     <header class="header" id="header">
         <nav class="navbar section-content">
-            <a href="../../index.html" class="nav-logo">
+            <a href="./index.html" class="nav-logo">
                 <img src="../logo/logo.png" alt="logo" class="logo-img">
             </a>
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times"></button>
 
                 <li class="nav-item">
-                    <a href="../pages/teorie.html" class="nav-link">Teorie</a>
+                    <a href="src/pages/teorie.html" class="nav-link">Teorie</a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">Specializzazione</a>
@@ -40,24 +41,38 @@
     </header>
 
     <main>
-    
-        <section class="teorie-page-section">
+        <section class="hero-section">
             <div class="section-content">
-                <div class="teorie-page-details">
-                    <h2 class="section-title">Le diverse teorie sull'evoluzione</h2>
-                    <div class="content">
-                        <h3 class="section-subtitle">Le teorie di Charles Darwin</h3>
-                        <p class="text">Charles Darwin (Shrewsbury, 12 febbraio 1809 - Londra, 19 aprile 1882) fu un illustre biologo e naturalista britannico. Il padre Robert esercitava la professione medica e suo nonno, Erasmo Darwin, era un noto pensatore e naturalista. Dopo aver completato gli studi di base nel 1818, Darwin entrò alla Shrewsbury School, dimostrando una predilezione per le discipline scientifiche rispetto a quelle umanistiche. Durante il tempo libero, Darwin era appassionato di raccolta di insetti e di uova di volatili. </p>
-                    </div>
-
+                <div class="hero-details">
+                    <h2 class="section-title">LE TEORIE</h2>
+                    <h3 style="font-size: 1.25em; text-align: center;" >L'evoluzione è uno dei concetti fondamentali della biologia, che spiega come le specie viventi si siano trasformate nel tempo e come siano emerse nuove forme di vita attraverso un lungo processo di cambiamento. La comprensione dell'evoluzione è frutto di secoli di osservazioni scientifiche, esperimenti e teorie che hanno contribuito a definire il nostro modo di vedere la natura e la diversità biologica. Dalle prime intuizioni di studiosi come Lamarck fino alle teorie rivoluzionarie di Charles Darwin, le idee sull'evoluzione hanno continuamente evoluto il nostro sapere, portando alla formulazione della teoria moderna che integra la genetica e la selezione naturale. In questa sezione esploreremo le principali teorie evolutive, il loro sviluppo storico e le scoperte che hanno portato alla comprensione attuale dei meccanismi che guidano il cambiamento biologico.</h3>
                 </div>
             </div>
         </section>
+
+        <section class="seconda-sezione">
+            <div class="card-container">
+                <a href="src/pages/evoluzioneUmana.html"><div class="card">
+                    <div class="image-placeholder"><img src="../images/darwin.jpg" width="320" height="200" alt=""></div>
+                    <h3>Charles Darwin</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div></a>
+                <a href="src/pages/microEvo.html"><div class="card">
+                    <div class="image-placeholder"><img src="../images/handy.png" width="320" height="200" alt=""></div>
+                    <h3>Hardy-Weinberg</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div></a>
+        
+            </div>
+        </section>
+
+        
+   
     </main>
 
 
 
-    <script type="module" src="../script/script.js"></script>
+    <script type="module" src="src/script/script.js"></script>
 
     
 </body>

@@ -57,6 +57,89 @@ img{
     width: 100%;
 }
 
+.container{
+    margin: 100px 0 0 200;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container img{
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:10px;
+    border: 2px solid rgba(255, 255, 255,0.684);
+    transition: all ease-in-out 0.5s;
+}
+
+.container img:hover{
+    width: 100%;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 3em;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    width: 320px;
+    height: 100%;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.seconda-sezione .card-container{
+    background: var(--light-green);
+}
+
+
+.image-placeholder {
+    background-color: #555;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Aggiungi le immagini adattandole al contenitore */
+.card img {
+    width: 100%; /* Imposta la larghezza dell'immagine al 100% del contenitore */
+    height: 200px; /* Imposta un'altezza fissa */
+    object-fit: cover; /* Mantieni il rapporto di aspetto senza distorcere l'immagine */
+    border-radius: 5px; /* Rende i bordi dell'immagine arrotondati */
+}
+
+.card h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+}
 .section-content{
     margin: 0 auto;
     padding: 0 20px;
@@ -467,6 +550,48 @@ header .navbar{
     background: transparent;
 }
 
+.foot{
+    background-color: #235e6d;
+    color: #ecf0f1;
+    padding: 20px 0; 
+    text-align: center;
+}
+
+.div_foot{
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.text_foot{
+    font-size: 24px; 
+    margin: 0
+}
+
+.p_foot{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.img_foot{
+    width: 200px;
+}
+
+.div_foot2{
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.link_foot{
+    color: #ecf0f1; 
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
 
 
 
